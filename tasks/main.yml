@@ -1,0 +1,6 @@
+---
+# tasks file for selinux
+- name: selinux | Put SELinux in {{ selinux_state }} mode
+  selinux:
+    policy: targeted
+    state: "{{ selinux_state }}"
